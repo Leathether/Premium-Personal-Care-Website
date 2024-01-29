@@ -38,11 +38,8 @@ tr {
     align-self:left;
 }
 #homeButton {
-    background-color:rgb(193, 193, 193);
-    height:6vh;
-    width:8vw;
-    border-top-right-radius:1vw;
-    border-top-left-radius:1vw;
+    width:7vw;
+
 }
 .topBarContent {
     background-color:rgb(193, 193, 193);
@@ -52,5 +49,9 @@ tr {
     font-family:'Helvetica';
     border-top-right-radius:1vw;
     border-top-left-radius:1vw;
-    border-color:rgb(47, 128, 124);
+    cursor:pointer;
+}
+.topBarContent:hover {
+    background-color:rgb(205, 205, 205);
+    font-size:2.2vw;
 }
