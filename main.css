@@ -12,10 +12,12 @@
 .bgpage2 {
     background-color: rgb(79, 172, 225);
     padding-top:5vh;
-    padding-left:2vw;
-    padding-right:2vw;
+    padding-left:50px;
+    padding-right:50px;
     padding-bottom:5vh;
     display: flex;
+    align-items:center;
+    position: relative;
     
 }
 .bgpage3 {
@@ -36,7 +38,8 @@
 }
 h1 {
     font-family:Verdana;
-    color: rgb(255,255,255);
+    font-size:2vw;
+    color: rgb(25 5,255,255);
     text-shadow: 2px 2px 5px red;
 }
 
@@ -87,26 +90,26 @@ tr {
 
 .homeButton {
     position:relative;
-    width:3vw;
-    height:6vh;
+    width:210px;
+    height:50px;
+    background-image:url("images/ddsLogo.png");
     background-color:rgb(193, 193, 193);
-    border-radius:1vw;
+    background-repeat:no-repeat;
+    border-radius:10px;
     border: 1px solid rgb(50,50,50);
+    
 }
 
-.homeButtonImage {
-    position:relative;
-    width:3vw;
-    height:6vh;
-    min-height:35px;
-    min-width:25px;
+.homeButton:hover {
+    background-color:rgb(205, 205, 205);
+    cursor:pointer;
 }
 
 
 .imageClass {
     position:absolute;
     padding-left: 5vw;
-    width:25vw;
+    width:300px;
 }
 
 .imageText {
@@ -124,8 +127,20 @@ tr {
     background-color: rgb(255, 255, 255);
     padding-top: 0vh;
     padding-bottom: 5vh;
-    border:rgb(79, 172, 225) solid 3vw;
-    width: 40vw;
+    border:rgb(0, 0, 0) solid 3vw;
+    border-width:2px;
+    width: 400px;
     border-radius:7vw;
     overflow:hidden;
+    margin:auto;
+}
+
+.duoDivisionImage {
+    background-color: rgba,(0,0,0,0);
+    width:320px;
+    margin-left:40px;
+    margin-right:40px;
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
