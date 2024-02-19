@@ -1,0 +1,148 @@
+@media only screen and (min-width: 825px){
+    .bgpage0 {
+        background-color: rgb(58, 126, 165);
+        height:6vh;
+        min-height:30px;
+    }
+    .bgpage1 {
+        background-color: rgb(58, 126, 165);
+        padding-top:5vh;
+        padding-bottom:5vh;
+        padding-left:10vw;
+    }
+    .bgpage2 {
+        margin:auto;
+        background-color: rgb(79, 172, 225);
+        padding-top:5vh;
+        padding-left:50px;
+        padding-right:50px;
+        padding-bottom:5vh;
+        position: relative;
+        display: box;
+
+    }
+    .bgpage3 {
+
+        background-color: rgb(255, 255, 255);
+        padding-top: 0vh;
+        padding-bottom:40vh;
+        width:700px;
+        border-radius:3vw;
+        overflow:hidden;
+    }
+    .bgpage4 {
+        background-color: rgb(255, 255, 255)
+    }
+    .bgpage5 {
+        background-color: rgb(112, 115, 137);
+        padding-top:20vh;
+    }
+    h1 {
+        font-family:Verdana;
+        font-size:2vw;
+        color: rgb(255,255,255);
+        text-shadow: 2px 2px 5px red;
+    }
+
+    h2 {
+        font-family:Verdana;
+        color: rgb(255,255,255);
+        text-shadow: 2px 2px 5px red;
+    }
+
+    p {
+        padding-left:5vw;
+        padding-right:5vw;
+        font-family:'Times-New-Roman';
+        font-size:larger;
+        line-height:2;
+    }
+
+    .headerParagraph {
+        color: rgb(255,255,255);
+        text-shadow: 2px 2px 5px red;
+    }
+
+    tr {
+        align-self:left;
+    }
+
+    .topBarSpacing {
+        width:37vw;
+    }
+
+    .topBarContent {
+        position:relative;
+        background-color:rgb(193, 193, 193);
+        height:6vh;
+        width:10vw;
+        font-size:12px;
+        font-family:'Helvetica';
+        border-radius:1vw;
+        border: 1px solid rgb(50,50,50);
+        cursor:pointer;
+        color: rgb(52, 37, 37);
+        text-shadow: 2px 2px 3px rgb(158, 169, 93);
+    }
+    .topBarContent:hover {
+        background-color:rgb(205, 205, 205);
+        font-size:1.2vw;
+    }
+
+    .homeButton {
+        position:relative;
+        width:210px;
+        height:50px;
+        background-image:url("images/ddsLogo.png");
+        background-color:rgb(193, 193, 193);
+        background-repeat:no-repeat;
+        border-radius:10px;
+        border: 1px solid rgb(50,50,50);
+
+    }
+
+    .homeButton:hover {
+        background-color:rgb(205, 205, 205);
+        cursor:pointer;
+    }
+
+
+    .imageClass {
+        position:absolute;
+        padding-left: 5vw;
+        width:200px;
+    }
+
+    .imageText {
+        position:relative;
+        padding-left: 40vw;
+    }
+
+    .bgpageLogo {
+        width:210px;
+        background-color:rgb(255,255,255);
+        border-radius:.5vw;
+    }
+
+    .duoDivision {
+        background-color: rgb(255, 255, 255);
+        padding-top: 0vh;
+        padding-bottom: 5vh;
+        border:rgb(79, 172, 225) solid;
+        border-width:20px;
+        width: 600px;
+        height: 700px;   
+        border-radius:50px;
+        overflow:hidden;
+    }
+
+    .duoDivisionImage {
+        background-color: rgba,(0,0,0,0);
+        width:320px;
+        margin-left:40px;
+        margin-right:40px;
+        position: relative;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
