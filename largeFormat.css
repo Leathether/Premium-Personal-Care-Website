@@ -118,13 +118,11 @@
     }
 
     .bgpageLogo {
-        width:210px;
-        background-color:rgb(255,255,255);
         border-radius:.5vw;
     }
 
     .duoDivision {
-        background-color: rgb(255, 255, 255);
+
         padding-top: 0vh;
         padding-bottom: 5vh;
         border:rgb(79, 172, 225) solid;
@@ -136,12 +134,22 @@
     }
 
     .duoDivisionImage {
-        background-color: rgba,(0,0,0,0);
         width:320px;
         margin-left:40px;
         margin-right:40px;
         position: relative;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+
+    .trioDivision {
+        margin-left:5vw;
+        width: 25vw;
+        height: 1000px;   
+    }
+    
+    .trioDivisionImage {
+        width:20vw;
+        margin:10%;
     }
 }
