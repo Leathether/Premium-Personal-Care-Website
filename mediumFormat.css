@@ -38,16 +38,11 @@
         padding-top:20vh;
     }
     h1 {
-        font-family:Verdana;
-        font-size:2vw;
-        color: rgb(255,255,255);
-        text-shadow: 2px 2px 5px red;
+        font-size:1rem;
     }
 
     h2 {
-        font-family:Verdana;
-        color: rgb(255,255,255);
-        text-shadow: 2px 2px 5px red;
+    
     }
 
     p {
@@ -73,32 +68,15 @@
     }
 
     .topBarContent {
-        position:relative;
-        background-color:rgb(193, 193, 193);
-        height:6vh;
+        height:6vw;
         width:10vw;
-        font-size:12px;
-        font-family:'Helvetica';
-        border-radius:1vw;
-        border: 1px solid rgb(50,50,50);
-        cursor:pointer;
-        color: rgb(52, 37, 37);
-        text-shadow: 2px 2px 3px rgb(158, 169, 93);
+        font-size:1.2rem;
     }
     .topBarContent:hover {
-        background-color:rgb(205, 205, 205);
-        font-size:1.2vw;
+        font-size:1.4rem;
     }
 
     .homeButton {
-        position:relative;
-        width:210px;
-        height:50px;
-        background-image:url("images/ddsLogo.png");
-        background-color:rgb(193, 193, 193);
-        background-repeat:no-repeat;
-        border-radius:10px;
-        border: 1px solid rgb(50,50,50);
 
     }
 
@@ -120,7 +98,8 @@
     }
 
     .bgpageLogo {
-        width:210px;
+        /*width:210px;*/
+        width:33vw;
         background-color:rgb(255,255,255);
         border-radius:.5vw;
     }

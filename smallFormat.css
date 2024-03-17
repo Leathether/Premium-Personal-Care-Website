@@ -5,9 +5,9 @@
 }
 .bgpage1 {
     background-color: rgb(58, 126, 165);
-    padding-top:30px;
-    padding-left:20px;
-    padding-bottom:30px;
+    padding-top:2vh;
+    padding-bottom:3vh;
+    padding-left:1.5rem;
     height:5vh;
 }
 .bgpage2 {
@@ -35,17 +35,25 @@
     background-color: rgb(112, 115, 137);
     padding-top:20vh;
 }
+.verticalAlign {
+    margin-top:2vh;
+    display:flexbox;
+    width:80vw;
+    position: relative;
+}
+
 h1 {
     font-family:Verdana;
-    font-size:2vw;
     color: rgb(255,255,255);
-    text-shadow: 2px 2px 5px red;
+    text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+    1.5px 1.5px #000, -1.5px -1.5px #000, 1.5px -1.5px #000, -1.5px 1.5px #000;
 }
 
 h2 {
     font-family:Verdana;
     color: rgb(255,255,255);
-    text-shadow: 2px 2px 5px red;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 p {
@@ -72,30 +80,31 @@ tr {
 
 .topBarContent {
     position:relative;
-    background-color:rgb(193, 193, 193);
+    background-color:rgb(58, 126, 165);
     height:6vh;
     width:9.5vw;
-    font-size:12px;
+    font-size:1rem;
     font-family:'Helvetica';
-    border-radius:1vw;
-    border: 1px solid rgb(50,50,50);
+    border:0px solid;
     cursor:pointer;
-    color: rgb(52, 37, 37);
-    text-shadow: 2px 2px 3px rgb(158, 169, 93);
+    color: rgb(239, 239, 239);
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    text-emphasis: bold;
 }
 .topBarContent:hover {
-    background-color:rgb(205, 205, 205);
-    font-size:15px;
+    background-color:rgb(193, 193, 193);
+    font-size:1rem;
+    border: 1px solid rgb(50,50,50);
 }
 
 .homeButton {
     position:relative;
-    width:210px;
-    height:50px;
+    width:30vw;
+    height:7vw;
     background-image:url("images/ddsLogo.png");
-    background-color:rgb(193, 193, 193);
     background-repeat:no-repeat;
-    border-radius:10px;
+    background-size: 90%;
     border: 1px solid rgb(50,50,50);
 
 }
@@ -118,9 +127,8 @@ tr {
 }
 
 .bgpageLogo {
-    width:210px;
+    width:33vw;
     background-color:rgb(255,255,255);
-    border-radius:.5vw;
 }
 
 .duoDivision {
@@ -129,7 +137,7 @@ tr {
     padding-bottom: 5vh;
     margin-bottom:100px;
     width: 90vw;
-    height: 700px;   
+    height: 120vw;   
     border-radius:50px;
     overflow:hidden;
 }
@@ -137,8 +145,8 @@ tr {
 .duoDivisionImage {
     background-color: rgba,(0,0,0,0);
     width:80vw;
-    margin-left:40px;
-    margin-right:40px;
+    margin-left:5vw;
+    margin-right:5vw;
     position: relative;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -162,4 +170,13 @@ tr {
     border-bottom-right-radius: 10px;
     position: relative;
     margin:5vw;
+}
+
+.middleImage{
+    position:relative;
+    width:60vw;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    margin-left:14vw;
+    margin-right:14vw;
 }
