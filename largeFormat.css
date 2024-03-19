@@ -13,18 +13,17 @@
         margin:auto;
         background-color: rgb(79, 172, 225);
         padding-top:5vh;
-        padding-left:50px;
-        padding-right:50px;
+        padding-left: 3vw;
+        padding-right:3vw;
         padding-bottom:5vh;
         position: relative;
         display: flex;
-
     }
     .bgpage3 {
-
+        position: relative;
         background-color: rgb(255, 255, 255);
         padding-top: 0vh;
-        padding-bottom:40vh;
+        padding-bottom:10vh;
         width:90vw;
         border-radius:3vw;
         overflow:hidden;
@@ -38,6 +37,13 @@
     }
     .verticalAlign {
         width:20vw;
+    }
+    .monoFlexbox {
+        height:fit-content;
+        max-height:90vw;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap:nowrap;
     }
     h1 {
         font-size:1.5rem;
@@ -69,10 +75,11 @@
     }
 
     .topBarContent {
-       font-size:2rem;
+       font-size:1.5rem;
     }
     .topBarContent:hover {
-        font-size:3rem;
+        animation-name: topBarContentAnime;
+        animation-duration: 1s;
     }
 
     .homeButton {
@@ -82,20 +89,22 @@
     }
 
     .homeButton:hover {
+        
         background-color:rgb(205, 205, 205);
         cursor:pointer;
     }
 
 
     .imageClass {
-        position:absolute;
-        padding-left: 5vw;
-        width:300px;
+        position:relative;
+        width:25vw;
+        
     }
 
     .imageText {
         position:relative;
-        padding-left: 40vw;
+        padding-left: 5vw;
+        width:45vw;
     }
 
     .bgpageLogo {
@@ -114,27 +123,28 @@
         overflow:hidden;
     }
 
-    .duoDivisionImage {
-        width:320px;
-        margin-left:40px;
-        margin-right:40px;
-        position: relative;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
 
     .trioDivision {
-        margin-left:5vw;
-        width: 25vw;
-        height: 1000px;   
+        margin-left:3vw;
+        width: 30vw;   
     }
     
     .trioDivisionImage {
-        width:20vw;
-        margin:10%;
+        width:25vw;
+        margin:1.25vw;
     }
     .middleImage{
         width:20vw;
         margin-left:0vw;
+        margin-right:0vw;
     }
+
+    @keyframes topBarContentAnime{
+        0% {background-color:rgba(193, 193, 193, 0);
+            font-size:1.5rem;
+            border: 1px solid rgba(50,50,50, 0);}
+        100% {background-color:rgba(193, 193, 193, 1);
+            font-size:1.9rem;
+            border: 1px solid rgba(50,50,50, 1);}
+        }
 }

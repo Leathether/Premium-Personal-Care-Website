@@ -1,3 +1,6 @@
+body {
+    margin:0px;
+}
 .bgpage0 {
     background-color: rgb(58, 126, 165);
     height:6vh;
@@ -5,8 +8,8 @@
 }
 .bgpage1 {
     background-color: rgb(58, 126, 165);
-    padding-top:2vh;
-    padding-bottom:3vh;
+    padding-top:.5vh;
+    padding-bottom:7vh;
     padding-left:1.5rem;
     height:5vh;
 }
@@ -18,15 +21,15 @@
     display: box;
     padding-left:2vw;
     padding-right:2vw;
-
 }
 .bgpage3 {
     background-color: rgb(255, 255, 255);
     padding-top: 0vh;
-    padding-bottom:40vh;
+    padding-bottom:10vh;
     width:90vw;
     border-radius:50px;
     overflow:hidden;
+    animation: BGPage3Anime 1s forwards;
 }
 .bgpage4 {
     background-color: rgb(255, 255, 255)
@@ -40,6 +43,12 @@
     display:flexbox;
     width:80vw;
     position: relative;
+}
+.monoFlexbox {
+    display:flex;
+    height:fit-content;
+    flex-direction: column;
+    flex-wrap:wrap;
 }
 
 h1 {
@@ -74,7 +83,7 @@ tr {
 }
 
 .topBarSpacing {
-    width:0px;
+    width:-100px;
     visibility: hidden;
 }
 
@@ -82,7 +91,8 @@ tr {
     position:relative;
     background-color:rgb(58, 126, 165);
     height:6vh;
-    width:9.5vw;
+    width:9vw;
+    padding-left:-5vw;
     font-size:1rem;
     font-family:'Helvetica';
     border:0px solid;
@@ -93,19 +103,21 @@ tr {
     text-emphasis: bold;
 }
 .topBarContent:hover {
-    background-color:rgb(193, 193, 193);
-    font-size:1rem;
-    border: 1px solid rgb(50,50,50);
+    animation-name: topBarContentAnime;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    border-radius:10px
 }
 
 .homeButton {
     position:relative;
-    width:30vw;
-    height:7vw;
+    width:25vw;
+    height:6vw;
     background-image:url("images/ddsLogo.png");
     background-repeat:no-repeat;
     background-size: 90%;
     border: 1px solid rgb(50,50,50);
+    border-radius:10px;
 
 }
 
@@ -116,14 +128,17 @@ tr {
 
 
 .imageClass {
-    position:absolute;
-    padding-left: 5vw;
-    width:200px;
+    position:relative;
+    margin-left: 5vw;
+    width:80vw;
+    border-radius:10px;
+    
 }
 
 .imageText {
     position:relative;
-    padding-left: 40vw;
+    width:85vw;
+    padding-left:5vw;
 }
 
 .bgpageLogo {
@@ -140,6 +155,7 @@ tr {
     height: 120vw;   
     border-radius:50px;
     overflow:hidden;
+    animation: duoDivisionAnime 1s forwards;
 }
 
 .duoDivisionImage {
@@ -148,8 +164,7 @@ tr {
     margin-left:5vw;
     margin-right:5vw;
     position: relative;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 
 .trioDivision {
@@ -157,26 +172,50 @@ tr {
     padding-top: 0vh;
     padding-bottom: 5vh;
     margin-bottom:100px;
-    width: 90vw;
-    height: 900px;   
+    width: 90vw;  
     border-radius:50px;
     overflow:hidden;
+    animation: trioDivisionAnime 1s forwards;
 }
 
 .trioDivisionImage {
     background-color: rgba,(0,0,0,0);
     width:80vw;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     position: relative;
     margin:5vw;
 }
 
 .middleImage{
     position:relative;
-    width:60vw;
-    padding-top:5vh;
-    padding-bottom:5vh;
-    margin-left:14vw;
-    margin-right:14vw;
+    width:80vw;
+    margin-top:5vh;
+    margin-bottom:5vh;
+    border-radius:10px;
+    margin-left:5vw;
+    margin-right:5vw;
+}
+
+@keyframes topBarContentAnime{
+    0% {background-color:rgba(193, 193, 193, 0);
+        font-size:1rem;
+        border: 1px solid rgba(50,50,50, 0);}
+    100% {background-color:rgba(193, 193, 193, 1);
+        font-size:1.25rem;
+        border: 1px solid rgba(50,50,50, 1);}
+    }
+
+@keyframes BGPage3Anime{
+    0%  {transform:translateX(100%);}
+    100% {transform:translateX(0)}
+}
+
+@keyframes duoDivisionAnime{
+    0% {transform:translateY(100%)}
+    100% {transform:translateY(0)}
+}
+
+@keyframes trioDivisionAnime{
+    0% {transform:translateX(-300%)}
+    100% {transform:translateX(0)}
 }
