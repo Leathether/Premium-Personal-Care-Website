@@ -1,0 +1,150 @@
+@media only screen and (min-width: 1200px){
+    .bgpage0 {
+        background-color: rgb(58, 126, 165);
+        height:6vh;
+        min-height:30px;
+    }
+    .bgpage1 {
+        background-color: rgb(58, 126, 165);
+        padding-top:5vh;
+        padding-bottom:5vh;
+    }
+    .bgpage2 {
+        margin:auto;
+        background-color: rgb(79, 172, 225);
+        padding-top:5vh;
+        padding-left: 3vw;
+        padding-right:3vw;
+        padding-bottom:5vh;
+        position: relative;
+        display: flex;
+    }
+    .bgpage3 {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        padding-top: 0vh;
+        padding-bottom:10vh;
+        width:90vw;
+        border-radius:3vw;
+        overflow:hidden;
+    }
+    .bgpage4 {
+        background-color: rgb(255, 255, 255)
+    }
+    .bgpage5 {
+        background-color: rgb(112, 115, 137);
+        padding-top:20vh;
+    }
+    .verticalAlign {
+        width:20vw;
+    }
+    .monoFlexbox {
+        height:fit-content;
+        max-height:90vw;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap:nowrap;
+    }
+    h1 {
+        font-size:1.5rem;
+    }
+
+    h2 {
+    
+    }
+
+    p {
+        padding-left:5vw;
+        padding-right:5vw;
+        font-family:'Times-New-Roman';
+        font-size:20px;
+        line-height:2;
+    }
+
+    .headerParagraph {
+        color: rgb(255,255,255);
+        text-shadow: 2px 2px 5px red;
+    }
+
+    tr {
+        align-self:left;
+    }
+
+    .topBarSpacing {
+        width:60vw;
+    }
+
+    .topBarContent {
+       font-size:1.5rem;
+    }
+    .topBarContent:hover {
+        animation-name: topBarContentAnime;
+        animation-duration: 1s;
+    }
+
+    .homeButton {
+        width:20vw;
+        height:4.5vw;
+
+    }
+
+    .homeButton:hover {
+        
+        background-color:rgb(205, 205, 205);
+        cursor:pointer;
+    }
+
+
+    .imageClass {
+        position:relative;
+        width:25vw;
+        
+    }
+
+    .imageText {
+        position:relative;
+        padding-left: 5vw;
+        width:45vw;
+    }
+
+    .bgpageLogo {
+        border-radius:.5vw;
+    }
+
+    .duoDivision {
+
+        padding-top: 0vh;
+        padding-bottom: 5vh;
+        border:rgb(79, 172, 225) solid;
+        border-width:20px;
+        width: 500px;
+        height: 700px;   
+        border-radius:50px;
+        overflow:hidden;
+    }
+
+
+    .trioDivision {
+        margin-left:3vw;
+        width: 30vw;   
+    }
+    
+    .trioDivisionImage {
+        width:25vw;
+        margin:1.25vw;
+    }
+    .middleImage{
+        width:20vw;
+        margin-left:0vw;
+        margin-right:0vw;
+    }
+
+    @keyframes topBarContentAnime{
+        0% {background-color:rgba(193, 193, 193, 0);
+            font-size:1.5rem;
+            border: 1px solid rgba(50,50,50, 0);}
+        100% {background-color:rgba(193, 193, 193, 1);
+            font-size:1.9rem;
+            border: 1px solid rgba(50,50,50, 1);}
+        }
+}
