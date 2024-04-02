@@ -29,6 +29,8 @@ body {
     width:90vw;
     border-radius:50px;
     overflow:hidden;
+}
+.bgpage3AnimeClass {
     animation: BGPage3Anime 1s forwards;
 }
 .bgpage4 {
