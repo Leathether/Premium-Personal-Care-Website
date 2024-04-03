@@ -38,17 +38,47 @@ function isInViewport(element) {
 
 // Function to handle scroll event
 function handleScroll() {
-  var elements = document.getElementsByClassName("bgpage3");
-  elements(function(element) {
+  var elements = document.querySelectorAll(".bgpage3");
+  elements.forEach(function(element) {
     if (isInViewport(element)) {
-      element.classList.add(bgpage3AnimeClass);
+      element.style.animation = 'none';
+      element.offsetHeight;
+      element.style.animation = null;
+    }
+  });
+}
+
+function handleCroll() {
+  var elements = document.querySelectorAll(".duoDivision");
+  elements.forEach(function(element) {
+    if (isInViewport(element)) {
+      element.style.animation = 'none';
+      element.offsetHeight;
+      element.style.animation = null;
+    }
+  });
+}
+
+function handleRoll() {
+  var elements = document.querySelectorAll(".trioDivision");
+  elements.forEach(function(element) {
+    if (isInViewport(element)) {
+      element.style.animation = 'none';
+      element.offsetHeight;
+      element.style.animation = null;
     }
   });
 }
 
 // Add scroll event listener
 window.addEventListener("scroll", handleScroll);
+window.addEventListener("scroll", handleCroll);
+window.addEventListener("scroll", handleRoll);
 
 // Initial check when page loads
 handleScroll();
+handleCroll();
+handleRoll()
+
+
 
