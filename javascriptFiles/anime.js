@@ -1,31 +1,4 @@
-//// Function to check if an element is in the viewport
-//function isInViewport(element) {
-//    var rect = element.getBoundingClientRect();
-//    return (
-//      rect.top >= 0 &&
-//      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight));
-//  }
-//  
-//  let animationRun = false;
-//  // Function to handle scroll event
-//  function handleScroll(CSSClass, anime) {
-//    var elements = document.getElementsByClassName(CSSClass);
-//    if (isInViewport(elements)) {
-//      elements.style.animation = anime;
-//    }
-//  }
-//  
-//  // Add scroll event listener
-//  window.addEventListener("scroll", handleScroll);
-//
-//  // Initial check when page loads
-//    handleScroll('.bgpage3','BGPage3Anime');
-//    handleScroll('.duoDivision','duoDivisionAnime');
-//    handleScroll('.trioDivision','trioDivisionAnime');
-//  
 
-// Function to check if an element is in the viewport
-// Function to check if an element is in the viewport
 function isInViewport(element) {
   var rect = element.getBoundingClientRect();
   return (
@@ -39,22 +12,33 @@ function isInViewport(element) {
 // Function to handle scroll event
 function handleScroll() {
   var elements = document.querySelectorAll(".bgpage3");
+  elementsArray = Array.from(elements)
   elements.forEach(function(element) {
     if (isInViewport(element)) {
       element.style.animation = 'none';
       element.offsetHeight;
       element.style.animation = null;
+      if (elements.item(elementsArray.length -1) === element){
+        console.log("hi")
+        window.removeEventListener("scroll", handleScroll);
+      }
     }
   });
 }
 
 function handleCroll() {
   var elements = document.querySelectorAll(".duoDivision");
+  elementsArray = Array.from(elements)
   elements.forEach(function(element) {
     if (isInViewport(element)) {
       element.style.animation = 'none';
       element.offsetHeight;
       element.style.animation = null;
+      window.removeEventListener("scroll", handleCroll);
+      if (elements.item(elementsArray.length -1) === element){
+        console.log("hi")
+        window.removeEventListener("scroll", handleCroll);
+      }
     }
   });
 }
@@ -66,11 +50,15 @@ function handleRoll() {
       element.style.animation = 'none';
       element.offsetHeight;
       element.style.animation = null;
+      if (elements.item(elementsArray.length -1) === element){
+        console.log("hi")
+        window.removeEventListener("scroll", handleRoll);
+      }
     }
   });
 }
 
-// Add scroll event listener
+// Add scroll event listener 
 window.addEventListener("scroll", handleScroll);
 window.addEventListener("scroll", handleCroll);
 window.addEventListener("scroll", handleRoll);
