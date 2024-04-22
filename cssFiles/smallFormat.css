@@ -119,12 +119,15 @@ tr {
     background-size: 90%;
     border: 1px solid rgb(50,50,50);
     border-radius:10px;
+    background-color:#fff;
 
 }
 
 .homeButton:hover {
-    background-color:rgb(205, 205, 205);
     cursor:pointer;
+    animation-name:homeButtonAnime;
+    animation-duration:.125s;
+    animation-fill-mode:forwards;
 }
 
 
@@ -180,7 +183,7 @@ tr {
 }
 
 .trioDivisionImage {
-    background-color: rgba,(0,0,0,0);
+    background-color: #fff;
     width:80vw;
     border-radius: 10px;
     position: relative;
@@ -205,6 +208,11 @@ tr {
         font-size:1.25rem;
         border: 1px solid rgba(50,50,50, 1);}
     }
+
+@keyframes homeButtonAnime{
+    0% {background-color: none;}
+    100%{background-color:rgb(205, 205, 205);}
+}
 
 @keyframes BGPage3Anime{
     0%  {transform:translateX(100%);}

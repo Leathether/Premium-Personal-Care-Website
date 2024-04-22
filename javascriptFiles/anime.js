@@ -2,61 +2,68 @@
 function isInViewport(element) {
   var rect = element.getBoundingClientRect();
   return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.top <= 250
   );
 }
-
+let BGPage3Count = new Array();
 // Function to handle scroll event
-function handleScroll() {
-  var elements = document.querySelectorAll(".bgpage3");
-  elementsArray = Array.from(elements)
+function handleScroll(){
+  let elements = document.querySelectorAll(".bgpage3");
+  i=0;
   elements.forEach(function(element) {
+    element.style.id = String(i);
+    i++;
     if (isInViewport(element)) {
-      element.style.animation = 'none';
-      element.offsetHeight;
-      element.style.animation = null;
-      if (elements.item(elementsArray.length -1) === element){
-        console.log("hi")
-        window.removeEventListener("scroll", handleScroll);
+      if (BGPage3Count.includes(element.style.id) === false){
+        element.style.animation = 'none';
+        element.offsetHeight;
+        element.style.animation = null;
+        BGPage3Count.push(element.style.id);
+        console.log(element.style.id);
       }
     }
   });
-}
+}    
 
+let duoDivisionCount = new Array();
+// Function to handle scroll event
 function handleCroll() {
   var elements = document.querySelectorAll(".duoDivision");
-  elementsArray = Array.from(elements)
+  i=0;
   elements.forEach(function(element) {
+    element.style.id = String(i);
+    i++;
     if (isInViewport(element)) {
-      element.style.animation = 'none';
-      element.offsetHeight;
-      element.style.animation = null;
-      window.removeEventListener("scroll", handleCroll);
-      if (elements.item(elementsArray.length -1) === element){
-        console.log("hi")
-        window.removeEventListener("scroll", handleCroll);
+      if (duoDivisionCount.includes(element.style.id) === false){
+        element.style.animation = 'none';
+        element.offsetHeight;
+        element.style.animation = null;
+        duoDivisionCount.push(element.style.id);
+        console.log(element.style.id);
       }
     }
   });
-}
+}  
 
+let trioDivisionCount = new Array();
+// Function to handle scroll event
 function handleRoll() {
   var elements = document.querySelectorAll(".trioDivision");
+  i=0;
   elements.forEach(function(element) {
+    element.style.id = String(i);
+    i++;
     if (isInViewport(element)) {
-      element.style.animation = 'none';
-      element.offsetHeight;
-      element.style.animation = null;
-      if (elements.item(elementsArray.length -1) === element){
-        console.log("hi")
-        window.removeEventListener("scroll", handleRoll);
+      if (trioDivisionCount.includes(element.style.id) === false){
+        element.style.animation = 'none';
+        element.offsetHeight;
+        element.style.animation = null;
+        trioDivisionCount.push(element.style.id);
+        console.log(element.style.id);
       }
     }
   });
-}
+} 
 
 // Add scroll event listener 
 window.addEventListener("scroll", handleScroll);
@@ -66,7 +73,7 @@ window.addEventListener("scroll", handleRoll);
 // Initial check when page loads
 handleScroll();
 handleCroll();
-handleRoll()
+handleRoll();
 
 
 

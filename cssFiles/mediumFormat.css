@@ -26,7 +26,7 @@
         background-color: rgb(255, 255, 255);
         padding-top: 0vh;
         padding-bottom:40vh;
-        width:700px;
+        width:90vw;
         border-radius:3vw;
         overflow:hidden;
     }
@@ -76,14 +76,6 @@
         font-size:1.4rem;
     }
 
-    .homeButton {
-
-    }
-
-    .homeButton:hover {
-        background-color:rgb(205, 205, 205);
-        cursor:pointer;
-    }
 
 
     .imageClass {
@@ -93,7 +85,8 @@
 
     .imageText {
         position:relative;
-        padding-left: 40vw;
+        width:60vw;
+        margin-left:20vw;
     }
 
     .bgpageLogo {
