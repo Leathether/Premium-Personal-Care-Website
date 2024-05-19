@@ -1,1 +1,1 @@
-function goHome() {open("../", "_self");}
+function goHome() {open("../index", "_self");}
