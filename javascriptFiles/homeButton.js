@@ -1,1 +1,1 @@
-function goHome() {open("../htmlFiles/index.html", "_self");}
+function goHome() {open("/htmlFiles/index.html", "_self");}
