@@ -62,18 +62,9 @@
         align-self:left;
     }
 
-    .topBarSpacing {
-        width:37vw;
-        visibility:visible;
-    }
-
-    .topBarContent {
-        height:6vw;
-        width:10vw;
-        font-size:1.2rem;
-    }
-    .topBarContent:hover {
-        font-size:1.4rem;
+    .topBarFlexContent {
+        height:9vh;
+        width:18vw;
     }
 
 

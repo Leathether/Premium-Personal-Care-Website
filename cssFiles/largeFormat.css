@@ -69,6 +69,15 @@
     tr {
         align-self:left;
     }
+.topBarFlexContainer {
+    display:flex;
+}
+
+.topBarSpacing {
+    width:-100px;
+    visibility: hidden;
+}
+
 
     .topBarSpacing {
         width:60vw;
