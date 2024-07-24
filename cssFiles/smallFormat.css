@@ -1,3 +1,5 @@
+@import "verySmallFormat.css";
+
 body {
     margin:0px;
 }
@@ -236,3 +238,4 @@ tr {
     0% {transform:translateX(-300%)}
     100% {transform:translateX(0)}
 }
+
